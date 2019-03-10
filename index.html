@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>FED Test</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css">
+
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -15,14 +18,15 @@
 
   <div class="container">
 
+    <!-- SECTION 1 -->
     <div class="row">
-      <div class="col col-lg-4">
-        <img class="image image-01" src="https://picsum.photos/384/619" alt="Placeholder">
+      <div class="col col-lg-4 col-md-6">
+        <img class="img-fluid image image-01" src="https://picsum.photos/384/619" alt="Placeholder">
       </div>
 
-      <div class="col col-lg-4">
-        <img class="image image-02" src="https://picsum.photos/384/305" alt="Placeholder">
-        <img class="image image-03" src="https://picsum.photos/384/304" alt="Placeholder">
+      <div class="col col-lg-4 col-md-6">
+        <img class="img-fluid image image-02" src="https://picsum.photos/384/305" alt="Placeholder">
+        <img class="img-fluid image image-03" src="https://picsum.photos/384/304" alt="Placeholder">
       </div>
 
       <div class="col col-lg-4">
@@ -35,6 +39,7 @@
       </div>
     </div>
 
+    <!-- SECTION 2 -->
     <div class="row">
       <div class="col col-lg-12">
         <h1 class="latest-news">All the latest from AEG</h1>
@@ -42,7 +47,7 @@
 
       <div class="row">
         <div class="col col-lg-4">
-          <img class="image" src="https://picsum.photos/384/290" alt="Placeholder">
+          <img data-toggle="modal" data-target="#image-4-modal" class="image" src="https://picsum.photos/384/290" alt="Placeholder">
           <h3 class="news-heading">Summer Lunch Menu by Mark Best</h3>
           <p class="news-text">AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.</p>
           <div>
@@ -53,7 +58,7 @@
         </div>
 
         <div class="col col-lg-4">
-          <img class="image" src="https://picsum.photos/384/290" alt="Placeholder">
+          <img data-toggle="modal" data-target="#image-5-modal" class="image" src="https://picsum.photos/384/290" alt="Placeholder">
           <h3 class="news-heading">A Traditional Christmas Eve, Mark Best Style</h3>
           <p class="news-text">One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.</p>
           <div>
@@ -64,7 +69,7 @@
         </div>
 
         <div class="col col-lg-4">
-          <img class="image" src="https://picsum.photos/384/290" alt="Placeholder">
+          <img data-toggle="modal" data-target="#image-6-modal" class="image" src="https://picsum.photos/384/290" alt="Placeholder">
           <h3 class="news-heading">Taking Taste Further</h3>
           <p class="news-text">This exclusive cookbook gives you all the know‑how you need. We’ve designed it to make sure you get the most out of our products – and the best out of your food.</p>
           <div>
@@ -73,13 +78,74 @@
             </a>
           </div>
         </div>
-      </div>
 
+        <!-- MODALS -->
+
+        <div class="modal fade" id="image-4-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Summer Launch Menu by Mark Best</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="image" src="https://picsum.photos/384/290" alt="Placeholder">
+                <div class="modal-text">
+                  AEG ambassador Mark Best’s summer eats are guaranteed to help you make the most of the warmer weather and entertaining at home.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="image-5-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">A Traditional Christmas Eve, Mark Best Style</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="image" src="https://picsum.photos/384/290" alt="Placeholder">
+                <div class="modal-text">
+                  One of Australia's best chefs and AEG ambassador, Mark Best, shares his favourite Christmas Eve menu which is sure to impress your guests.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="image-6-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Taking Taste Further</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <img class="image" src="https://picsum.photos/384/290" alt="Placeholder">
+                <div class="modal-text">
+                  This exclusive cookbook gives you all the know‑how you need. We’ve designed it to make sure you get the most out of our products – and the best out of your food.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
 
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
