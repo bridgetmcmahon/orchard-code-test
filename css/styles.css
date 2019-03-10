@@ -146,6 +146,10 @@ hr {
   .image-01 {
     margin-bottom: 10px;
   }
+
+  body {
+    margin: 0 5%;
+  }
 }
 
 @media (max-width: 399px) {
