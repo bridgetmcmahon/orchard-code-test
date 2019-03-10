@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
+:root {
+  --primary-color: #0E1414;
+  --secondary-color: #CF1430;
+}
+
+/* ----- LAYOUT ----- */
+
 * {
   box-sizing: border-box;
 }
@@ -7,10 +14,13 @@
 body {
   padding-top: 100px;
   padding-bottom: 50px;
-  background-color: #0E1414;
+  background-color: var(--primary-color);
   color: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
+
+/* ----- SECTION 1 ----- */
 
 .hero-heading {
   text-transform: uppercase;
@@ -32,20 +42,24 @@ hr {
 
 .subheading {
   text-transform: uppercase;
-  weight: 600;
-  color: #CF1430;
+  color: var(--secondary-color);
   font-size: 16px;
   line-height: 28px;
 }
 
 .secondary-text {
-  font-weight: 600;
   font-size: 18px;
   line-height: 30px;
 }
 
+.image-03 {
+  padding-top: 10px;
+}
+
+/* ----- SECTION 2 ----- */
+
 .latest-news {
-  margin-top: 200px;
+  margin-top: 180px;
   margin-bottom: 60px;
   font-weight: 300;
   width: 100%;
@@ -56,14 +70,19 @@ hr {
   letter-spacing: 0.81px;
 }
 
+#news-items div {
+  margin-bottom: 15px;
+}
+
 .read-more {
   color: #FFFFFF;
   line-height: 30px;
   font-size: 16px;
   padding-top: 20px;
   padding-bottom: 5px;
+  margin-bottom: 10px;
   text-transform: uppercase;
-  border-bottom: 1px solid #CF1430;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 .read-more:hover {
@@ -73,7 +92,6 @@ hr {
 }
 
 .news-heading {
-  font-weight: 600;
   font-size: 18px;
   line-height: 30px;
   margin-top: 27px;
@@ -88,14 +106,50 @@ hr {
   padding-top: 15px;
 }
 
-.image:hover {
-  cursor: pointer;
-}
-
-.image-03 {
-  padding-top: 10px;
+.news-image {
+  border-bottom: 4px solid var(--secondary-color);
 }
 
 .modal-content {
-  background-color: #0E1414;
+  background-color: var(--primary-color);
+}
+
+/* ----- MEDIA QUERIES ----- */
+
+@media (max-width: 1200px) {
+  .hero * {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero * {
+    font-size: 80%;
+  };
+}
+
+@media (max-width: 991px) {
+  .hero * {
+    font-size: 100%;
+  }
+
+  .hero-heading {
+    margin-top: 20px;
+  }
+
+  .latest-news {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .image-01 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 399px) {
+  body * {
+    margin: 20px;
+  }
 }
