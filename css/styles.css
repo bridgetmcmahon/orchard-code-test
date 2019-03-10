@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 50px;
+  background-color: #0E1414;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.hero-heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+
+hr {
+  background-color: #FFFFFF;
+}
+
+.hero-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: normal;
+}
+
+.subheading {
+  text-transform: uppercase;
+  weight: 600;
+  color: #CF1430;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: normal;
+}
+
+.secondary-text {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: normal;
+  line-height: 30px;
+}
+
+.image {
+  width: 95%;
+}
